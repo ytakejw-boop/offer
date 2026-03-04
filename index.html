@@ -406,9 +406,9 @@
             </div>
 
             <div class="text-sm text-gray-500 space-x-4 text-center mt-12">
-                <a href="#" class="hover:text-gray-300">特定商取引法に基づく表記</a>
+                <a href="javascript:void(0)" onclick="openModal('law-modal')" class="hover:text-gray-300 transition-colors">特定商取引法に基づく表記</a>
                 <span>|</span>
-                <a href="#" class="hover:text-gray-300">プライバシーポリシー</a>
+                <a href="javascript:void(0)" onclick="openModal('privacy-modal')" class="hover:text-gray-300 transition-colors">プライバシーポリシー</a>
             </div>
         </div>
     </section>
@@ -418,5 +418,152 @@
         <p>&copy; 2026 Neuro Dynamics. All Rights Reserved.</p>
     </footer>
 
+    <!-- Modals -->
+    <!-- 特定商取引法に基づく表記 モーダル -->
+    <div id="law-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:p-0">
+            <!-- 背景のオーバーレイ（クリックで閉じる） -->
+            <div class="fixed inset-0 bg-black/80 transition-opacity" aria-hidden="true" onclick="closeModal('law-modal')"></div>
+
+            <!-- モーダルパネル -->
+            <div class="relative inline-block align-bottom bg-navy-800 border border-navy-700 rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl w-full max-h-[80vh] flex flex-col">
+                <div class="bg-navy-900 px-6 py-4 border-b border-navy-700 flex justify-between items-center">
+                    <h3 class="text-lg leading-6 font-bold text-white" id="modal-title">特定商取引法に基づく表記</h3>
+                    <button type="button" class="text-gray-400 hover:text-white focus:outline-none" onclick="closeModal('law-modal')">
+                        <span class="sr-only">閉じる</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <div class="px-6 py-6 overflow-y-auto text-sm text-gray-300 space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">販売事業者名</div>
+                        <div class="sm:col-span-2">株式会社〇〇〇〇 / 屋号〇〇</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">運営統括責任者</div>
+                        <div class="sm:col-span-2">竹内 康弘</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">所在地</div>
+                        <div class="sm:col-span-2">〒000-0000<br>東京都〇〇区〇〇町 1-2-3 〇〇ビル1F</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">電話番号</div>
+                        <div class="sm:col-span-2">090-XXXX-XXXX<br><span class="text-xs text-gray-500">※お問い合わせは原則メールまたはLINEにてお願いいたします。</span></div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">メールアドレス</div>
+                        <div class="sm:col-span-2">info@example.com</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">販売価格</div>
+                        <div class="sm:col-span-2">各商品・サービスの詳細ページに記載（表示価格は消費税込みの価格です）</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">商品代金以外の必要料金</div>
+                        <div class="sm:col-span-2">銀行振込時の振込手数料、対面セッション時の交通費および会場費（実費）はお客様負担となります。</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">支払方法・時期</div>
+                        <div class="sm:col-span-2">クレジットカード決済（申込時）、銀行振込（お申込みから3日以内）</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-navy-700 pb-3">
+                        <div class="font-bold text-gray-400">サービスの提供時期</div>
+                        <div class="sm:col-span-2">決済完了後、個別にご連絡の上、日程調整を行いサービスを提供いたします。</div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                        <div class="font-bold text-gray-400">キャンセル・返金</div>
+                        <div class="sm:col-span-2">サービスの性質上、お支払い完了後のキャンセルおよび返金はお受けできかねます。あらかじめご了承ください。</div>
+                    </div>
+                </div>
+                <div class="bg-navy-900 px-4 py-3 sm:px-6 flex justify-center border-t border-navy-700">
+                    <button type="button" class="w-full inline-flex justify-center rounded-md border border-navy-600 shadow-sm px-4 py-2 bg-navy-700 text-base font-medium text-white hover:bg-navy-600 focus:outline-none sm:w-auto sm:text-sm transition-colors" onclick="closeModal('law-modal')">
+                        閉じる
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- プライバシーポリシー モーダル -->
+    <div id="privacy-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:p-0">
+            <!-- 背景のオーバーレイ -->
+            <div class="fixed inset-0 bg-black/80 transition-opacity" aria-hidden="true" onclick="closeModal('privacy-modal')"></div>
+
+            <!-- モーダルパネル -->
+            <div class="relative inline-block align-bottom bg-navy-800 border border-navy-700 rounded-xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl w-full max-h-[80vh] flex flex-col">
+                <div class="bg-navy-900 px-6 py-4 border-b border-navy-700 flex justify-between items-center">
+                    <h3 class="text-lg leading-6 font-bold text-white" id="modal-title">プライバシーポリシー</h3>
+                    <button type="button" class="text-gray-400 hover:text-white focus:outline-none" onclick="closeModal('privacy-modal')">
+                        <span class="sr-only">閉じる</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </div>
+                <div class="px-6 py-6 overflow-y-auto text-sm text-gray-300 space-y-6">
+                    <p>当方は、お客様の個人情報の保護について重要性を認識し、以下の通りプライバシーポリシーを定めます。</p>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">1. 個人情報の収集について</h4>
+                        <p class="leading-relaxed">当方は、サービス提供にあたり、氏名、メールアドレス、電話番号、LINEアカウント情報、ならびにトレーニングに必要な身体的情報やスポーツ歴などを適法かつ公正な手段で収集いたします。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">2. 個人情報の利用目的</h4>
+                        <p class="leading-relaxed">収集した個人情報は、以下の目的で利用いたします。<br>
+                        ・体験セッションおよび継続トレーニングの提供・管理<br>
+                        ・お問い合わせに対する回答および連絡<br>
+                        ・当方が提供するサービス、イベントなどのご案内<br>
+                        ・サービスの品質向上を目的とした分析および調査</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">3. 個人情報の第三者提供について</h4>
+                        <p class="leading-relaxed">当方は、法令に定める場合を除き、事前にお客様の同意を得ることなく、個人情報を第三者に提供いたしません。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">4. 個人情報の管理について</h4>
+                        <p class="leading-relaxed">お客様の個人情報の漏洩、滅失または毀損を防止するため、適切なセキュリティ対策を講じ、厳重に管理いたします。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">5. 個人情報の開示・訂正・削除について</h4>
+                        <p class="leading-relaxed">お客様ご本人から個人情報の開示、訂正、追加、削除などのご請求があった場合には、ご本人であることを確認の上、速やかに対応いたします。</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-white mb-2 border-l-4 border-brand-green pl-2">6. お問い合わせ窓口</h4>
+                        <p class="leading-relaxed">本ポリシーに関するお問い合わせは、公式LINEまたはお問い合わせフォーム（メールアドレス）よりお願いいたします。</p>
+                    </div>
+                </div>
+                <div class="bg-navy-900 px-4 py-3 sm:px-6 flex justify-center border-t border-navy-700">
+                    <button type="button" class="w-full inline-flex justify-center rounded-md border border-navy-600 shadow-sm px-4 py-2 bg-navy-700 text-base font-medium text-white hover:bg-navy-600 focus:outline-none sm:w-auto sm:text-sm transition-colors" onclick="closeModal('privacy-modal')">
+                        閉じる
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 制御用スクリプト -->
+    <script>
+        // ページ読み込み時にトップへ強制スクロール（スマホ対策）
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+            }, 50);
+        });
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // 背面のスクロールを禁止
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto'; // 背面のスクロールを再開
+        }
+    </script>
 </body>
 </html>
