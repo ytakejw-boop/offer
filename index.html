@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【LINE読者限定】Neuro Dynamics 特別体験セッション</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0B1120', // より深い背景色
+                            800: '#151F32', // カード背景色
+                            700: '#1E293B', // ボーダー等
+                            600: '#334155',
+                        },
+                        brand: {
+                            red: '#E53E3E',
+                            yellow: '#F6E05E',
+                            green: '#22C55E',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B1120;
+            color: #f8fafc;
+        }
+        .highlight-marker {
+            background: linear-gradient(transparent 60%, rgba(229, 62, 62, 0.4) 60%);
+            display: inline;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #F6E05E, #facc15);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(34, 197, 94, 0.39);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Top Banner (Limited Offer) -->
+    <div class="bg-brand-red text-white text-center py-2 px-4 text-sm font-bold tracking-wider relative z-50">
+        【LINE読者限定】毎月1名様限定の特別オファー・募集開始
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden px-4">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Training" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-navy-900/50 via-navy-900/80 to-navy-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <p class="text-brand-yellow font-bold text-sm md:text-base mb-4 tracking-widest">
+                LINEで学んだ「理論」を「実践」へ変える時が来ました。
+            </p>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+                筋トレしても試合で勝てない<br class="hidden md:block">
+                アスリートの身体を根本から変革する<br>
+                <span class="text-brand-red text-4xl md:text-6xl lg:text-7xl block mt-2">Neuro Dynamics</span>
+                <span class="block text-2xl md:text-4xl mt-4">特別体験セッション</span>
+            </h1>
+            <p class="text-gray-300 text-base md:text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
+                これまでの配信でお伝えしてきた「3つの致命的なエラー」を排除し、<br class="hidden md:block">
+                あなたの「脳と神経」を書き換え、持っている筋力を120%実戦で発揮させる<br class="hidden md:block">
+                科学的アプローチを直接体感しませんか？
+            </p>
+            
+            <a href="#offer" class="cta-button inline-block bg-brand-green text-white font-bold text-lg md:text-xl py-4 px-10 rounded-full w-full md:w-auto">
+                特別体験セッションの詳細を見る
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-2 -mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Review / Problem Section -->
+    <section class="py-16 md:py-24 px-4 bg-navy-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 border-b-2 border-brand-red pb-4 inline-block mx-auto flex justify-center">
+                あなたはまだ、この「エラー」を続けていませんか？
+            </h2>
+            
+            <div class="bg-navy-800 border border-navy-700 rounded-xl p-6 md:p-8 mb-8 shadow-lg">
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    LINEの配信でお伝えしてきた通り、多くのスポーツ選手が陥る罠があります。それは<span class="text-white font-bold highlight-marker">「筋力を上げればパフォーマンスが上がる」という誤解</span>です。
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-brand-red font-bold mr-3 mt-1 text-xl">✖</span>
+                        <p class="text-gray-200">ウェイトトレーニングを「筋肉をデカくする」目的だけで行っている</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand-red font-bold mr-3 mt-1 text-xl">✖</span>
+                        <p class="text-gray-200">体幹トレーニングで腹筋を「ガチガチに固める」ことばかりしている</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand-red font-bold mr-3 mt-1 text-xl">✖</span>
+                        <p class="text-gray-200">「連動性」を無視して、筋肉をパーツごとに鍛えて満足している</p>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="text-center text-lg md:text-xl font-bold leading-relaxed">
+                もし一つでも当てはまるなら、あなたのポテンシャルは<br class="hidden md:block">
+                <span class="text-brand-yellow text-2xl">まだ半分も引き出されていません。</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Solution / Program Details -->
+    <section class="py-16 md:py-24 px-4 bg-navy-800 relative">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full mb-4 inline-block tracking-wider">SOLUTION</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">「脳科学的アプローチ」を直接インストールする</h2>
+                <p class="text-gray-400">体験セッションで行う3つのステップ</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col md:flex-row bg-navy-900 border border-navy-700 rounded-xl overflow-hidden shadow-xl">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Assessment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 md:p-8 md:w-2/3 flex flex-col justify-center">
+                        <div class="text-brand-yellow font-bold text-xl mb-2">STEP 01</div>
+                        <h3 class="text-2xl font-bold mb-3">神経伝達エラーのアセスメント</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            なぜあなたの筋力が動作に繋がらないのか？独自のテストを用いて、筋肉の強さではなく「脳から筋肉への指令がどう滞っているか」を正確に評価します。あなたの伸び悩みの根本原因がここで明確になります。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col md:flex-row-reverse bg-navy-900 border border-navy-700 rounded-xl overflow-hidden shadow-xl">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Activation" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 md:p-8 md:w-2/3 flex flex-col justify-center">
+                        <div class="text-brand-yellow font-bold text-xl mb-2">STEP 02</div>
+                        <h3 class="text-2xl font-bold mb-3">ニューロ・アクティベーション</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            評価に基づき、サボっている筋肉のスイッチを入れ、過緊張している筋肉をリリースします。重いオモリは使いません。特定の刺激を脳に入力することで、その場で「身体が軽く動く」「力が入る」という感覚の変化を体感していただきます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col md:flex-row bg-navy-900 border border-navy-700 rounded-xl overflow-hidden shadow-xl">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Integration" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6 md:p-8 md:w-2/3 flex flex-col justify-center">
+                        <div class="text-brand-yellow font-bold text-xl mb-2">STEP 03</div>
+                        <h3 class="text-2xl font-bold mb-3">競技動作への統合（インテグレーション）</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            活性化した神経・筋肉の繋がりを、あなたが実際に行う競技の動作に落とし込みます。ただ身体が良くなるだけでなく、「ダッシュが速くなった」「当たり負けしなくなった」という競技特有のパフォーマンスアップへ直結させます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 md:py-24 px-4 bg-navy-900">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-center text-3xl font-bold mb-2">受講者の圧倒的な変化</h2>
+            <p class="text-center text-gray-400 mb-12">※個人の感想であり、効果を保証するものではありません。</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Voice 1 -->
+                <div class="bg-navy-800 border border-navy-700 p-6 rounded-xl relative">
+                    <div class="absolute top-0 left-0 bg-brand-red text-white text-xs font-bold px-2 py-1 rounded-tl-xl rounded-br-lg">Voice 01</div>
+                    <h4 class="text-lg font-bold text-brand-yellow mt-4 mb-3">「ただ重りを上げるだけ」から脱却し、プレーのスピードが劇的に向上。</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        今までベンチプレスやスクワットの数値を追うばかりで、実際の試合では動きが重く感じていました。アセスメントで「筋肉の出力タイミングのズレ」を指摘され、アプローチを変えた途端、切り返しのスピードが格段に上がりました。
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center mr-3 font-bold text-white">サ</div>
+                        サッカー / 20代
+                    </div>
+                </div>
+
+                <!-- Voice 2 -->
+                <div class="bg-navy-800 border border-navy-700 p-6 rounded-xl relative">
+                    <div class="absolute top-0 left-0 bg-brand-red text-white text-xs font-bold px-2 py-1 rounded-tl-xl rounded-br-lg">Voice 02</div>
+                    <h4 class="text-lg font-bold text-brand-yellow mt-4 mb-3">当たり負けしない「本物の体幹」を手に入れた。</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                        腹筋ばかり鍛えていましたが、コンタクトプレーですぐにバランスを崩していました。セッションで「反射による体幹の安定」を学んでから、意識しなくても身体が勝手に反応して踏ん張れるようになり、フィジカル負けがなくなりました。
+                    </p>
+                    <div class="flex items-center text-sm text-gray-400">
+                        <div class="w-8 h-8 rounded-full bg-gray-600 flex items-center justify-center mr-3 font-bold text-white">ラ</div>
+                        ラグビー / 20代
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer & CTA Section -->
+    <section id="offer" class="py-20 md:py-32 px-4 bg-navy-900 relative">
+        <!-- Decoration -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full max-w-lg h-1 bg-gradient-to-r from-transparent via-brand-red to-transparent"></div>
+
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-brand-red text-white font-bold px-6 py-2 rounded-full mb-6 animate-pulse">
+                    LINE読者限定の特別案内
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black leading-tight">
+                    あなたの状態に合わせた<br>
+                    最適なセッションをお選びください
+                </h2>
+            </div>
+
+            <!-- Pricing Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- Plan 1 -->
+                <div class="bg-navy-800 border border-navy-700 rounded-2xl relative flex flex-col pt-12 pb-8 px-6 md:px-8">
+                    <div class="absolute top-0 right-0 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-tr-2xl rounded-bl-lg">
+                        毎月1名限定 半額
+                    </div>
+                    
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">
+                        ①【オンライン限定】<br>
+                        <span class="text-2xl md:text-3xl block mt-2">神経学トレーニング</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        まずは自分の身体に起きている「エラー」を知り、神経系から動きを最適化する基盤を作りたい方向け。
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-sm"><span class="font-bold text-white mr-2">時間：</span>45分</p>
+                        <p class="text-sm leading-relaxed"><span class="font-bold text-white mr-2">内容：</span>アセスメント（脳・筋力・動作・バランスの評価）＋ 課題に対する神経学トレーニング ＋ 今後のプラン提案</p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <p class="text-gray-500 text-sm line-through mb-1">通常 8,000円</p>
+                        <div class="flex items-end">
+                            <span class="text-5xl font-black text-brand-yellow">5,000</span>
+                            <span class="text-xl ml-1 pb-1">円</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#final-notice" class="mt-8 block w-full bg-navy-700 hover:bg-navy-600 border border-navy-600 text-white font-bold text-center py-4 rounded-xl transition-colors">
+                        オンラインに申し込む
+                    </a>
+                </div>
+
+                <!-- Plan 2 (Recommended) -->
+                <div class="bg-navy-800 border-2 border-blue-500 rounded-2xl relative flex flex-col pt-12 pb-8 px-6 md:px-8 shadow-[0_0_30px_rgba(59,130,246,0.15)]">
+                    <div class="absolute top-0 left-0 bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-tl-xl rounded-br-lg">
+                        推奨
+                    </div>
+                    <div class="absolute top-0 right-0 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-tr-xl rounded-bl-lg">
+                        毎月1名限定 半額
+                    </div>
+                    
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">
+                        ②【対面パーソナル】<br>
+                        <span class="text-2xl md:text-3xl block mt-2">完全実戦型・パフォーマンスアップ指導</span>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        オンラインの神経学アプローチに加え、「最新の運動学習理論」を使い、実際の動作に直接落とし込みます。確実に試合で上手くなる最強パッケージ。
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-sm"><span class="font-bold text-white mr-2">時間：</span>60〜90分</p>
+                        <p class="text-sm leading-relaxed"><span class="font-bold text-white mr-2">内容：</span>神経学アプローチ ＋ 最新運動学習理論に基づく実戦動作のインストール<br><span class="text-gray-500 text-xs mt-1 block">※会場費別途</span></p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <p class="text-gray-500 text-sm line-through mb-1">通常 20,000円</p>
+                        <div class="flex items-end">
+                            <span class="text-5xl font-black text-brand-yellow">15,000</span>
+                            <span class="text-xl ml-1 pb-1">円</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#final-notice" class="mt-8 cta-button block w-full bg-brand-green hover:bg-green-400 text-white font-bold text-center py-4 rounded-xl shadow-lg transition-colors">
+                        対面パーソナルに申し込む
+                    </a>
+                </div>
+            </div>
+
+            <!-- Plan 3 (VIP) -->
+            <div class="bg-[#3A2820] border border-[#5A4030] rounded-2xl p-6 md:p-8 text-center relative overflow-hidden shadow-lg">
+                <div class="relative z-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-brand-yellow mb-4 flex justify-center items-center">
+                        <span class="mr-2 text-2xl">👑</span>【VIP】長期フルサポート契約
+                    </h3>
+                    <p class="text-gray-300 text-sm md:text-base leading-relaxed mb-6 max-w-3xl mx-auto">
+                        本気で頂点を目指す方へ。シーズンを通じた徹底的なパフォーマンス管理、日常的なメッセージフィードバック、食事・栄養指導を含めた完全密着型サポート。
+                    </p>
+                    <p class="text-lg md:text-xl font-bold">
+                        期間：3ヶ月〜 / 料金：<span class="text-3xl font-black text-white ml-2">30万円〜</span> <span class="text-xs md:text-sm font-normal text-gray-400 ml-2">（※目標により個別見積もり）</span>
+                    </p>
+                    <a href="#final-notice" class="mt-6 inline-block border border-brand-yellow text-brand-yellow hover:bg-brand-yellow hover:text-black font-bold py-3 px-8 rounded-full transition-colors">
+                        VIPサポートの相談をする
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="py-16 md:py-24 px-4 bg-navy-800">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-sm font-bold mb-2 flex items-center text-blue-400 tracking-wider uppercase">
+                REPRESENTATIVE
+            </h2>
+            <h3 class="text-3xl md:text-4xl font-bold mb-10">科学と現場の架け橋として。</h3>
+
+            <div class="flex flex-col md:flex-row items-start bg-navy-900 border border-navy-700 p-8 rounded-xl shadow-lg">
+                <div class="mb-8 md:mb-0 md:mr-10 shrink-0 text-center w-full md:w-64 bg-navy-800 p-4 rounded-xl border border-navy-700">
+                    <!-- Profile Image Placeholder -->
+                    <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="竹内 康弘" class="w-full aspect-[3/4] object-cover rounded-lg mb-4 grayscale hover:grayscale-0 transition duration-500">
+                    <h4 class="text-2xl font-bold">竹内 康弘</h4>
+                    <p class="text-sm text-gray-400">Yasuhiro Takeuchi</p>
+                </div>
+                <div class="flex-1">
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        脳・神経トレーナー / 元浦和レッズコーチ（修士号）。<br><br>
+                        17年、1000人以上の指導実経験の中で、従来の「反復練習」や「筋力偏重」のトレーニングに疑問を抱く。<br>
+                        ドイツサッカークラブU-19監督経験や、オリンピック・ワールドカップなど世界大会に出場する選手の指導経験も持つ。<br><br>
+                        最新の脳科学・神経学をベースにした「機能神経学」、個体差を考慮した「ディファレンシャルラーニング」、環境との関係性を説く「アフォーダンス」。これらを体系化した独自のメソッド『Neuro Dynamics Method』を確立。<br><br>
+                        現在はプロアスリートのパフォーマンスアップから、企業のリスキリング研修まで、多岐にわたり「人の可能性」を広げる活動を行っている。
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                        <div class="bg-navy-800 border border-navy-700 p-4 rounded-lg">
+                            <p class="text-xs text-gray-400 mb-1">Title / Degree</p>
+                            <p class="text-sm font-bold">脳・神経トレーナー / 修士号</p>
+                        </div>
+                        <div class="bg-navy-800 border border-navy-700 p-4 rounded-lg">
+                            <p class="text-xs text-gray-400 mb-1">Location</p>
+                            <p class="text-sm font-bold">全国対応（拠点は関西・関東）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Notice Section -->
+    <section id="final-notice" class="py-20 md:py-32 px-4 bg-[#050810] border-t border-navy-800">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-brand-red mb-8 flex justify-center items-center">
+                <span class="text-brand-yellow mr-2 text-3xl">⚠️</span>
+                最後に重要なお知らせです。
+            </h2>
+            
+            <p class="text-gray-300 text-sm md:text-base leading-loose mb-6">
+                私のトレーニングは、一人ひとりの脳と動作を精密に分析するため、月に見られる人数に限界があります。<br>
+                そのため、各メニュー<span class="text-brand-yellow font-bold text-base md:text-lg">【毎月1名限定の半額枠】は、文字通り早い者勝ち</span>です。
+            </p>
+            
+            <p class="text-white text-sm md:text-base leading-loose font-bold mb-12">
+                同じ額の自己投資をするなら、「上手くなるかわからないギャンブル」ではなく、<br>
+                「確実に動きが変わる科学的アプローチ」を選んでください。
+            </p>
+
+            <!-- Buttons -->
+            <div class="space-y-4 max-w-lg mx-auto">
+                <!-- LINE Button -->
+                <a href="https://lin.ee/rp3DUS7" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full bg-[#06C755] hover:bg-[#05b34c] text-white font-bold py-4 rounded-full transition-transform hover:-translate-y-1 shadow-lg shadow-green-900/20">
+                    <!-- LINE icon -->
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 mr-3 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.122.298.08.683.039.954-.044.301-.274 1.637-.333 1.996-.089.544-.413 2.031 1.776 1.107 2.19-1.018 11.854-7.009 11.854-13.84v-.417zM7.221 13.065h-2.12v-5.18h2.12v5.18zm3.921 0h-2.119v-5.18h2.119v5.18zm6.471 0h-1.28l-2.614-3.52v3.52h-2.119v-5.18h2.119l2.614 3.52v-3.52h1.28v5.18z"/></svg>
+                    LINEで申し込む / 相談する
+                </a>
+                
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/y.take.jw?igsh=MXdqYmJ4NHptNXZtcQ==" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-white font-bold py-4 rounded-full transition-transform hover:-translate-y-1 shadow-lg shadow-pink-900/20" style="background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);">
+                    <!-- Instagram icon -->
+                    <svg viewBox="0 0 24 24" class="w-6 h-6 mr-3 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    Instagram DMで相談する
+                </a>
+                
+                <!-- Web Button -->
+                <a href="https://neuro-dynamics.jp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full bg-navy-700 hover:bg-navy-600 border border-navy-600 text-white font-bold py-4 rounded-full transition-transform hover:-translate-y-1 shadow-lg shadow-navy-900/50">
+                    Webサイトから問い合わせる
+                </a>
+            </div>
+
+            <div class="text-sm text-gray-500 space-x-4 text-center mt-12">
+                <a href="#" class="hover:text-gray-300">特定商取引法に基づく表記</a>
+                <span>|</span>
+                <a href="#" class="hover:text-gray-300">プライバシーポリシー</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-6 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Neuro Dynamics. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
